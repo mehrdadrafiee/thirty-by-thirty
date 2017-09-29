@@ -1,11 +1,11 @@
 <div class="drum-kit">
   <div class="keys">
-    {{#each model as |sound index|}}
-      <div data-key={{sound.data-key}} class="key">
-        <kbd {{action "log" sound}}>{{sound.kbd}}</kbd>
-        <span class="sound">{{sound.sound}}</span>
+    {{#each model as |tone index|}}
+      <div data-key={{tone.data-key}} class="key">
+        <kbd {{action "log" tone}}>{{tone.kbd}}</kbd>
+        <span class="sound">{{tone.sound}}</span>
+        <audio data-key={{tone.data-key}} src="assets/drum-kit/sounds/{{tone.sound}}.wav"></audio>
       </div>
-      <audio data-key={{sound.data-key}} src="assets/drum-kit/sounds/{{sound.sound}}.wav"></audio>
     {{/each}}
   </div>
   {{outlet}}
