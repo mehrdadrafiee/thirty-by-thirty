@@ -2,6 +2,6 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-    return ['Sidebar', 'Switch', 'Table'];
+    return ['Drum Kit', 'Sidebar', 'Switch', 'Table'];
   }
 });
