@@ -1,6 +1,4 @@
-import Ember from 'ember';
-
-let { Component, inject } = Ember;
+import Component from '@ember/component';
 
 export default Component.extend({
   // function removeTransition(e) {
