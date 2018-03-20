@@ -3,14 +3,15 @@
   background: url(http://i.imgur.com/b9r5sEL.jpg) bottom center;
   background-size: cover;
   .keys {
-    // color: red;
     display: flex;
+    flex-wrap: nowrap;
     flex: 1;
     min-height: 100vh;
     align-items: center;
     justify-content: center;
   }
   .key {
+    flex-grow: 1;
     border: .4rem solid black;
     border-radius: .5rem;
     margin: 1rem;
@@ -36,6 +37,5 @@
     font-size: 1.2rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
-    color: #ffc600;
   }
 }
